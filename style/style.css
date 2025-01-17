@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif, 'IBM Plex mono';
+}
+
+.calculator-block {
+    max-width: 350px;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100%;
+    margin-top: 50px;
+    background-color: rgb(229, 233, 233);
+    border: 1px solid rgb(167, 161, 161);
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.calculator-block__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5px;
+}
+
+.calculator-block__expression {
+    min-width: 100%;
+    border-radius: 5px;
+    min-height: 70px;
+    border: 1px solid rgb(167, 161, 161);
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    justify-content: end;
+    font-size: 40px;
+    color: rgb(27, 27, 27);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1.5px;
+    font-size: 22px;
+    background-color: #fff;
+    flex-grow: 1;
+    -webkit-box-shadow: 0px -1px 21px -6px rgba(0, 0, 0, 0.45) inset;
+    -moz-box-shadow: 0px -1px 21px -6px rgba(0, 0, 0, 0.45) inset;
+    box-shadow: 0px -1px 21px -6px rgba(0, 0, 0, 0.45) inset;
+}
+
+.button:hover {
+    background-color: #f1eded;
+}
+
+.button:active {
+    transform: scale(0.98);
+    transition: transform 1 ease-in;
+}
+
+.btn-result:hover {
+    background-color: rgb(126, 138, 248);
+}
+
+.bg-color-operator {
+    background-color: rgb(219, 219, 219);
+}
+
+.bg-color-equally {
+    background-color: rgb(104, 118, 241);
+}
+
